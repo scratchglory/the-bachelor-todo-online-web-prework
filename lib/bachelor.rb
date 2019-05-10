@@ -29,7 +29,7 @@ def get_contestant_name(data, occupation)
       end
     end
   end
-binding.pry
+# binding.pry
 end
 
 
