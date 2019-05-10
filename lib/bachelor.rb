@@ -22,10 +22,11 @@ end
 # returns the name of the woman who has that occupation
 #   occupation == "Cruise Ship Singer"
 def get_contestant_name(data, occupation)
-  data.each do |detail|
-    binding.pry
-    if detail["occupation"] == "Cruise Ship Singer"
-      return detail["name"]
+  data.each do |season_hash, info|
+    info.each do |detail|
+      if detail["occupation"] == "Cruise Ship Singer"
+        return detail["name"]
+      end
     end
   end
 binding.pry
