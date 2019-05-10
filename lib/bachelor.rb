@@ -50,7 +50,9 @@ end
 def get_occupation(data, hometown)
   data.each do |season_hash, info|
     info.each do |detail|
-    binding.pry
+    # binding.pry
+      if detail["hometown"] = hometown
+        return detail["occupation"]
     end
   end  
 end
