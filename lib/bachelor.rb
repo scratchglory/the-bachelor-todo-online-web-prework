@@ -20,10 +20,11 @@ end
 
 
 # returns the name of the woman who has that occupation
+#   occupation == "Cruise Ship Singer"
 def get_contestant_name(data, occupation)
   data.each do |detail|
     binding.pry
-    if detail["occupation"] == occupation
+    if detail["occupation"] == "Cruise Ship Singer"
       return detail["name"]
     end
   end
