@@ -59,7 +59,7 @@ end
 
 #   Return the average age of all of the contestants for that season
 def get_average_age_for_season(data, season)
-  data.each do |season_hash|
+  data[season].each do |season_hash|
     binding.pry
   end
 end
