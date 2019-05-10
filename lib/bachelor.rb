@@ -65,7 +65,8 @@ end
        if into_array[:hometown] == hometown
          return into_array[:name]
        end 
-   end 
+    end 
+  end
  end
 
 def get_average_age_for_season(data, season)
