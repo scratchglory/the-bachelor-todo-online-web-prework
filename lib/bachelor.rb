@@ -55,8 +55,10 @@ def get_occupation(data, hometown)
         return detail["occupation"]
       end
     end
-  end  
+  end
+  binding.pry
 end
+
 
 def get_average_age_for_season(data, season)
   # code here
