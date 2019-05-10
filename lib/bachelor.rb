@@ -48,10 +48,9 @@ end
 
 # Returns the occupation of the first contestant who hails from that hometown
 def get_occupation(data, hometown)
-  binding.pry
   data.each do |season_hash, info|
     info.each do |detail|
-    
+    binding.pry
     end
   end  
 end
