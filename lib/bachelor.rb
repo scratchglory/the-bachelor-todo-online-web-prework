@@ -75,21 +75,5 @@ def get_average_age_for_season(data, season)
   return (age/num_of_ages).round
 end
 
-# def get_average_age_for_season(data, season)
-#   ages = 0
-#   num_of_ages = 0
-#     data[season].each do |contestant_data|
-#       contestant_data.each do |detail,data|
-#         if detail == "age"
-#           num_of_ages += 1
-#           ages += data.to_f
-#         end
-#       end
-#     end
-#   return (ages/num_of_ages).round
-# end
-
-
-
 
 
