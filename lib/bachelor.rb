@@ -65,28 +65,29 @@ def get_average_age_for_season(data, season)
   num_of_ages = 0
   
   data[season].each do |season_hash|
-    season_hash.each do |detail|
-    if detail == "age"
-      num_of_ages += 1 
-      age += data.to_f
+    season_hash.each do |detail, info|
+      if detail == "age"
+        num_of_ages += 1 
+        age += info.to_f
+      end
     end
   end
   return (age/num_of_ages).round
 end
 
-def get_average_age_for_season(data, season)
-  ages = 0
-  num_of_ages = 0
-    data[season].each do |contestant_data|
-      contestant_data.each do |detail,data|
-        if detail == "age"
-          num_of_ages += 1
-          ages += data.to_f
-        end
-      end
-    end
-  return (ages/num_of_ages).round
-end
+# def get_average_age_for_season(data, season)
+#   ages = 0
+#   num_of_ages = 0
+#     data[season].each do |contestant_data|
+#       contestant_data.each do |detail,data|
+#         if detail == "age"
+#           num_of_ages += 1
+#           ages += data.to_f
+#         end
+#       end
+#     end
+#   return (ages/num_of_ages).round
+# end
 
 
 
