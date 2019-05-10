@@ -65,7 +65,6 @@ def get_average_age_for_season(data, season)
     if season_hash == "age"
       age = season_hash["age"]
     end
+    binding.pry
   end
-  binding.pry
-  
 end
