@@ -63,7 +63,7 @@ def get_average_age_for_season(data, season)
   data[season].each do |season_hash|
     # binding.pry
     if season_hash == "age"
-      age = season_hash["age"].to_f
+      age = season_hash["age"]
     end
   end
   binding.pry
