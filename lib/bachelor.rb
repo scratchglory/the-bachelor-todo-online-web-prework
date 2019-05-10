@@ -52,9 +52,9 @@ def get_occupation(data, hometown)
     info.each do |detail|
     # binding.pry
       if detail["hometown"] = hometown
+        binding.pry
         return detail["occupation"]
       end
-      binding.pry
     end
   end
 end
