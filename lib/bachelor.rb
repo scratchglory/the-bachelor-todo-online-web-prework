@@ -67,6 +67,6 @@ def get_average_age_for_season(data, season)
   data[season].each do |season_hash|
     if season_hash == "age"
       num_of_ages += 1 
-      
+      age += data.to_f
   end
 end
