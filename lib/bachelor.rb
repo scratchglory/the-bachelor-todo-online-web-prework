@@ -53,6 +53,7 @@ def get_occupation(data, hometown)
     # binding.pry
       if detail["hometown"] = hometown
         return detail["occupation"]
+      end
     end
   end  
 end
