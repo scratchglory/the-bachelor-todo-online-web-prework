@@ -58,15 +58,15 @@ def get_occupation(data, hometown)
 end
 
 #   Return the average age of all of the contestants for that season
-#   Avg == sum/(quantity)
+#   Avg == sum/(quantity_of_numbers)
+
 def get_average_age_for_season(data, season)
-  age = 0 
+  age = 0
+  num_of_ages = 0
   
   data[season].each do |season_hash|
-    # binding.pry
     if season_hash == "age"
-      age = season_hash["age"]
-    end
-    binding.pry
+      num_of_ages += 1 
+      
   end
 end
