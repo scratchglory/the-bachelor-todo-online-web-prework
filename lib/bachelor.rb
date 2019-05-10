@@ -20,7 +20,6 @@ end
 
 
 # returns the name of the woman who has that occupation
-#   occupation == "Cruise Ship Singer"
 def get_contestant_name(data, occupation)
   data.each do |season_hash, info|
     info.each do |detail|
@@ -35,7 +34,7 @@ end
 
 # Return a counter of the number of contestants who are from that hometown
 def count_contestants_by_hometown(data, hometown)
-  # code here
+  data.each do |
 end
 
 
