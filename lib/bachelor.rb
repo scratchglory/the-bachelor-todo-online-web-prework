@@ -23,7 +23,7 @@ end
 def get_contestant_name(data, occupation)
   data.each do |detail|
     binding.pry
-    if detail["occupation"] == 
+    if detail["occupation"] == occupation
       return detail["name"]
     end
   end
