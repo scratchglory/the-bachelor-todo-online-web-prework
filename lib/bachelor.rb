@@ -46,9 +46,14 @@ def count_contestants_by_hometown(data, hometown)
 end
 
 
-#
+# Returns the occupation of the first contestant who hails from that hometown
 def get_occupation(data, hometown)
-
+  binding.pry
+  data.each do |season_hash, info|
+    info.each do |detail|
+    
+    end
+  end  
 end
 
 def get_average_age_for_season(data, season)
