@@ -34,7 +34,14 @@ end
 
 # Return a counter of the number of contestants who are from that hometown
 def count_contestants_by_hometown(data, hometown)
-  data.each do |
+  counter = 0
+  data.each do |season_hash, info|
+    info.each do |detail|
+      if detail["hometown"] == hometown
+        counter += 1 
+      end
+    end
+  end
 end
 
 
